@@ -1,7 +1,5 @@
 package lab1; 
 
-import java.util.Arrays;
-
 public class Driver { 
 	public static void main(String [] args) { 
 		Polynomial p = new Polynomial(); 
@@ -12,7 +10,6 @@ public class Driver {
 		Polynomial p2 = new Polynomial(c2); 
 		Polynomial s = p2.add(p1); 
 		System.out.println("s(0.1) = " + s.evaluate(0.1));
-		System.out.println(Arrays.toString(s.coeff));
 		if(s.hasRoot(1)) 
 			System.out.println("1 is a root of s"); 
 		else
